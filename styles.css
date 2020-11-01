@@ -21,6 +21,10 @@
     margin-right: auto;
     width: 100%;
 }
+html{
+    min-width: 300px;
+
+}
 
 body{
     font-family: 'Roboto Mono', monospace;
@@ -36,7 +40,7 @@ body{
     flex-direction: column;
     /*background-color: oldlace;*/
     margin-bottom: 5%;
-    min-width: 500px;
+    /*min-width: 300px;*/
 
 }
 
@@ -53,13 +57,30 @@ body{
     header{
         max-width: 100%;
         background-size: cover;
+        display: block;
     }
-    html{
+    html, header, article, aside, footer{
         display: block;
     }
 
-    .textColor{
+    .textColor, .text-info, #skills{
         text-align: center;
+        font-size: 0.7em;
+    }
+    #greetings, .globalColor {
+        font-size: .9em;
+
+    }
+    .container {
+        display: block;
+        align-self: center;
+        justify-self: center;
+    }
+    #myPhoto{
+        width: 50vw;
+    }
+    .fixed-top{
+        display: none;
     }
 }
 
